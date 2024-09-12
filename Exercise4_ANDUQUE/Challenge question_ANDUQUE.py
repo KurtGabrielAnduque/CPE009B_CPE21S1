@@ -1,4 +1,4 @@
-class StudentInfo():
+class Person():
     def __init__(self, name, pre, mid, fin):
         self.__name = name
         self.__pre = pre
@@ -7,30 +7,30 @@ class StudentInfo():
         
 
 
-class Student1(StudentInfo):
+class Student1(Person):
     
     def Grade(self):
-        return (self._StudentInfo__pre + self._StudentInfo__mid + self._StudentInfo__fin)/3
+        return (self._Person__pre + self._Person__mid + self._Person__fin)/3
         
     def Display_Grade(self):
-        print(f'Student name: {self._StudentInfo__name}')
-        print(f'Student prelim Grade: {self._StudentInfo__pre}')
-        print(f'Student midterm Grade: {self._StudentInfo__pre}')
-        print(f'Student finals Grade: {self._StudentInfo__pre}') 
+        print(f'Student name: {self._Person__name}')
+        print(f'Student prelim Grade: {self._Person__pre}')
+        print(f'Student midterm Grade: {self._Person__pre}')
+        print(f'Student finals Grade: {self._Person__pre}') 
         print(f'Student Average grade: {round(self.Grade(),2)}')
         if self.Grade() >= 50:
             return "Situation: PASS"
         else:
             return "Situation: Fail"
     
-class Student2(StudentInfo):
+class Student2(Person):
     def Grade(self):
-        return (self._StudentInfo__pre + self._StudentInfo__mid + self._StudentInfo__fin)/3    
+        return (self._Person__pre + self._Person__mid + self._Person__fin)/3    
     def Display_Grade(self):
-        print(f'Student name: {self._StudentInfo__name}')
-        print(f'Student prelim Grade: {self._StudentInfo__pre}')
-        print(f'Student midterm Grade: {self._StudentInfo__pre}')
-        print(f'Student finals Grade: {self._StudentInfo__pre}') 
+        print(f'Student name: {self._Person__name}')
+        print(f'Student prelim Grade: {self._Person__pre}')
+        print(f'Student midterm Grade: {self._Person__pre}')
+        print(f'Student finals Grade: {self._Person__pre}') 
         print(f'Student Average grade: {round(self.Grade(),2)}')
         if self.Grade() >= 50:
             return "Situation: PASS"
@@ -38,16 +38,16 @@ class Student2(StudentInfo):
             return "Situation: Fail"
         
 
-class Student3(StudentInfo):
+class Student3(Person):
     
     def Grade(self):
-        return (self._StudentInfo__pre + self._StudentInfo__mid + self._StudentInfo__fin)/3
+        return (self._Person__pre + self._Person__mid + self._Person__fin)/3
     def Display_Grade(self):
         
-        print(f'Student name: {self._StudentInfo__name}')
-        print(f'Student prelim Grade: {self._StudentInfo__pre}')
-        print(f'Student midterm Grade: {self._StudentInfo__pre}')
-        print(f'Student finals Grade: {self._StudentInfo__pre}') 
+        print(f'Student name: {self._Person__name}')
+        print(f'Student prelim Grade: {self._Person__pre}')
+        print(f'Student midterm Grade: {self._Person__pre}')
+        print(f'Student finals Grade: {self._Person__pre}') 
         print(f'Student Average grade: {round(self.Grade(),2)}')
         if self.Grade() >= 50:
             return "Situation: PASS"
