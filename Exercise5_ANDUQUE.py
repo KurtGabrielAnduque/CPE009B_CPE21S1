@@ -31,19 +31,19 @@ class Person:
         
 class Plane_ticket_child(Person):
     def ticket_cost(self):
-        return f'{self.name} your ticket is worth 1000 pesos'
+        return f'{self.name} Since your age is {self.age} your ticket is worth 1000 pesos'
     
 class Plane_ticket_adult(Person):
     def ticket_cost(self):
-        return f'{self.name} your ticket is worth 2000 pesos'
+        return f'{self.name} Since your age is {self.age} your ticket is worth 2000 pesos'
 
 class Plane_ticket_senior(Person):
     def ticket_cost(self):
-        return f'{self.name} your ticket is worth 1500 pesos'
+        return f'{self.name} Since your age is {self.age} your ticket is worth 1500 pesos'
     
 class Plane_ticket_youth(Person):
     def ticket_cost(self):
-        return f'{self.name} your ticket is worth 1200 pesos'
+        return f'{self.name} Since your age is {self.age} your ticket is worth 1200 pesos'
 
 
 print("\n")
